@@ -74,7 +74,7 @@
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-whatsapp"></i>
-         
+          
         </div>
         <div class="button1">
           <a href="#">SHOP NOW</a>
@@ -316,40 +316,40 @@
 
 
   <!-- About -->
-
-    <div class="about" id="About">
-      <h1>Web<span>    ABOUT</span></h1>
-      <div class="about_main">
+  <div class="about" id="About">
+    <h1>Web<span>    ABOUT</span></h1>
+    <div class="about_main">
         <div class="about_image">
-          <div class="about_sub_image">
-            <img src="image/red_shoes1.png"  onclick="functio(this)">
-            <img src="image/red_shoes2.png"  onclick="functio(this)">
-            <img src="image/red_shoes3.png"  onclick="functio(this)">
-            <img src="image/red_shoes4.png"  onclick="functio(this)">
-          </div>
-          <div class="image_container">
-            <img src="image/red_shoes1.png" id="imagebox">
-          </div>
+            <div class="about_sub_image">
+                <img src="image/red_shoes1.png" onclick="displayImage(this)">
+                <img src="image/red_shoes2.png" onclick="displayImage(this)">
+                <img src="image/red_shoes3.png" onclick="displayImage(this)">
+                <img src="image/red_shoes4.png" onclick="displayImage(this)">
+            </div>
+            <div class="image_container">
+                <img src="image/red_shoes1.png" id="imagebox">
+            </div>
         </div>
-
         <div class="about_text">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab error numquam doloremque ea doloribus,
-            natus vitae ratione similique beatae necessitatibus consequatur omnis molestias itaque quis laboriosam ut. 
-            Laudantium eveniet natus recusandae debitis ex quia aspernatur sapiente culpa voluptate sint corrupti,
-            commodi dolor, omnis beatae sunt odit possimus at aut aliquid! Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Tempore quam nesciunt qui laudantium possimus fugit similique cupiditate ex aut laboriosam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque eius voluptas maiores possimus inventore
-            aut, numquam sit tempore nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis facilis omnis ipsum, deserunt amet non voluptates illo sunt cum voluptas iure accusamus ducimus temporibus reprehenderit autem dolorem mollitia et beatae sit placeat nemo! Nostrum esse aut expedita dolorum voluptate voluptates in architecto id voluptatibus at, aliquid nisi dicta ducimus?</p>
+                natus vitae ratione similique beatae necessitatibus consequatur omnis molestias itaque quis laboriosam ut.
+                Laudantium eveniet natus recusandae debitis ex quia aspernatur sapiente culpa voluptate sint corrupti,
+                commodi dolor, omnis beatae sunt odit possimus at aut aliquid! Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Tempore quam nesciunt qui laudantium possimus fugit similique cupiditate ex aut laboriosam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque eius voluptas maiores possimus inventore
+                aut, numquam sit tempore nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis facilis omnis ipsum, deserunt amet non voluptates illo sunt cum voluptas iure accusamus ducimus temporibus reprehenderit autem dolorem mollitia et beatae sit placeat nemo! Nostrum esse aut expedita dolorum voluptate voluptates in architecto id voluptatibus at, aliquid nisi dicta ducimus?</p>
         </div>
-      </div>
-        <a href="#" class="about_btn">Shop Now</a>
-        <script>
-          function functio(samll){
-            var full= document.getElementById("imagbox")
-            full.src= small.src
-          }
-        </script>
     </div>
+    <a href="#" class="about_btn">Shop Now</a>
+</div>
+
+<script>
+function displayImage(element) {
+    var imgSrc = element.src;
+    var imageBox = document.getElementById("imagebox");
+    imageBox.src = imgSrc;
+}
+</script>
 
 
 
